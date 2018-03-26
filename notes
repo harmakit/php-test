@@ -1,0 +1,1 @@
+<img src="localhost/images/<?php echo $row["photo"]?>.jpg">
