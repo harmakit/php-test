@@ -1,7 +1,7 @@
 <?php
-$mysqli = new mysqli('localhost', 'harmakit', '', 'test');
+$mysqli = new mysqli('127.0.0.1', 'harmakit', 'password', 'test', 3300);
 if ($mysqli->connect_error) {
-    die('Ошибка подключения (' . $mysqli->connect_errno . ') '
+    throw new Exception('Ошибка подключения (' . $mysqli->connect_errno . ') '
             . $mysqli->connect_error);
 }
-?>
+
